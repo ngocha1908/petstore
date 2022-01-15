@@ -1,0 +1,296 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+body{
+    background-color: rgb(19, 19, 19);
+}
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+/*------------------------------HEADER-----------------------------------------*/
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    height: 70px;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: rgba(191, 239, 255, 0.658);
+}
+header.sticky{
+    background-color: lightblue;
+}
+header:hover{
+    background-color: lightblue;
+}
+.logo img{
+    flex: 1;
+    width: 80px;
+    height: 50px;
+}
+.menu{
+    flex: 2;
+    display: flex;
+}
+.menu li{
+    padding: 15px 20px;
+    margin-right: 20px;
+    position: relative;
+    display: block;
+}
+header .menu ul li{
+    display: block;
+}
+.petmenu{
+    position: absolute;
+    width: 245px;
+    border: 1px solid rgb(133, 43, 2);
+    text-align: left;
+    visibility: hidden;
+    transition: 0.1s ;
+    z-index: 1;
+}
+.menu li:hover .petmenu{
+    visibility: visible;
+    top: 60px;
+    background-color:rgba(173, 216, 230, 0.712);
+}
+.phukien-menu{
+    position: absolute;
+    width: 200px;
+    border: 1px solid rgb(133, 43, 2);
+    text-align: left;
+    visibility: hidden;
+    transition: 0.1s ;
+    z-index: 1;
+}
+.menu li:hover .phukien-menu{
+    visibility: visible;
+    top: 60px;
+    background-color:rgba(173, 216, 230, 0.712);
+}
+.dichvumenu{
+    position: absolute;
+    width: 200px;
+    border: 1px solid rgb(133, 43, 2);
+    padding: 5px 0 5px ;
+    text-align: left;
+    visibility: hidden;
+    transition: 0.1s ;
+    z-index: 1;
+}
+.menu li:hover .dichvumenu{
+    visibility: visible;
+    top: 60px;
+    background-color:rgba(173, 216, 230, 0.712);
+}
+.menu li a{
+    font-size: 17px;
+    color: rgb(133, 0, 0);
+    font-weight: bold;
+    display: block;
+    line-height: 20px;
+}
+.petmenu li ul a{
+    font-weight: normal;
+    font-size: 14px;
+    color: black;
+    border-bottom: 1px solid rgb(245, 78, 0);
+    margin-bottom: -50px;
+}
+
+.orthers{
+    flex: 1;
+    display: flex;
+    padding: 0 30px;
+}
+.orthers li{
+    padding: 15px 20px;
+    position: relative;
+    display: block;
+    
+}
+.orthers li::after{
+    content: "";
+    display: block;
+    width: 1px;
+    height: 50%;
+    background: #000;
+    position: absolute;
+    right: 0;
+    top: 30%;
+    transform: translate(-50%);
+}
+.orthers li:first-child input{
+    width: 100%;
+    border: none ;
+    border-bottom: 2px solid rgb(2, 2, 2);
+    border-left: 2px solid rgb(2, 2, 2);
+    color: black;
+    background: transparent;
+    outline: none ;
+    padding: 0 30px;
+}
+#userButton{
+    background-color: transparent;
+    border: none;
+    padding-left: 3px;
+    cursor: pointer;
+}
+
+/*Phần đn*/
+main{
+    margin: 0 auto; 
+    width: 40%;
+}
+
+h1{
+    margin-left: 40px;
+    margin-top: 80px;
+    color: white;
+    width: 500px;
+}
+
+.dangnhap{
+    margin-left: 40px;
+    margin-top: 50px;
+    color:white;
+    background-color: sienna;
+    font-size: 30px;
+    width: 500px;
+}
+
+.dnhap{
+    font-size: 20px;
+    margin-left: 40px;
+    width: 300px;
+    height: 40px;
+    background-color: rgb(19, 19, 19);
+    color: white;
+    margin-top: 40px;
+}
+.dktk{
+    font-size: 15px;
+    margin-left: 40px;
+    margin-top: 10px;
+    color: white;
+}
+.dnhap input{
+    font-size: 20px;
+    width: 500px;
+    height: 35px;
+    background-color: orange;
+    color: black;
+    border: 2px solid #08BFBF;
+    border-bottom: 2px solid #08BFBF;
+}
+/**/
+
+/*FORM HELP*/
+.auth-form__aside{
+    margin-top: 10px;
+}
+.auth-form__help{
+    margin: auto;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+}
+.auth-form__help-link{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #939393;
+}
+.auth-form__help-separate{
+    display: block;
+    height: 22px;
+    margin: 4px 16px 0 ;
+    border-left: 2px solid rgb(122, 122, 122);
+}
+.auth-form__help-forgot{
+    color: rgba(245, 110, 57, 0.795);
+}
+
+/*footer*/
+.footerphoto{
+    text-align: center;
+}
+.footerphoto img{
+    margin: 50px;
+    height: 230px;
+    width: 1021px;
+}
+
+.footertitle{
+    display: flex;
+    color: rgb(255, 130, 14);
+    margin-left: 100px;
+    
+}
+.footertitle div{
+    margin: 10px;
+    padding: 20px;
+    font-size: 15px;
+    line-height: 3em;
+}
+.footertitle div a{
+    color: rgb(247, 183, 141);
+}
+.footertitle div a:hover{
+    text-decoration: none ;
+    font-weight: 900;
+    text-shadow: 0px 5px 5px  rgb(245, 129, 52), 0px 3px 3px rgb(255, 253, 253);
+}
+.footertitle div h4{
+    font-size: 20px;
+    line-height: 2em;
+    border-bottom: 1px solid rgb(145, 5, 0);
+}
+
+.social-icons{
+    text-align: center;
+    border-bottom: 1px dotted black
+}
+.fa-facebook-f, .fa-instagram, .fa-phone, .fa-youtube {
+    border: 2px solid rgb(122, 122, 122);
+    border-radius: 50%;
+    text-align: center;
+    color: rgb(73, 73, 73);
+    line-height: 2.19em;
+    min-width: 2.5em;
+    margin-left: 10px;
+}
+.fa-facebook-f:hover{
+    background-color: rgb(29, 74, 170);
+    color: cornsilk;
+    text-shadow: 0px 5px 5px  rgb(73, 73, 73), 0px 3px 3px rgb(255, 253, 253);
+}
+.fa-instagram:hover{
+    background-color: darkmagenta;
+    color: cornsilk;
+    text-shadow: 0px 5px 5px  rgb(73, 73, 73), 0px 3px 3px rgb(255, 253, 253);
+}
+.fa-phone:hover{
+    background-color: dimgray;
+    color: cornsilk;
+    text-shadow: 0px 5px 5px  rgb(73, 73, 73), 0px 3px 3px rgb(255, 253, 253);
+}
+.fa-youtube:hover{
+    background-color: firebrick;
+    color: cornsilk;
+    text-shadow: 0px 5px 5px  rgb(73, 73, 73), 0px 3px 3px rgb(255, 253, 253);
+}
